@@ -4,7 +4,7 @@ const usersRouter = require('./routes/users');
 const contactsRouter = require('./routes/contacts');
 const verifyUser = require('./middlewares/verifyUser');
 const app = express();
-
+console.log(1);
 app.use(express.json());
 app.use(morgan('tiny'));
 app.use(express.urlencoded({ extended: true }));
